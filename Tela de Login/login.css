@@ -1,0 +1,375 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: 67.5%;
+}
+
+:root{
+    --white-word-color: rgb(255, 232, 232);
+    --background-header: rgb(69, 69, 238);
+    --login-color: rgb(78, 112, 126);
+    --register-color: rgb(44, 197, 31);
+    --color-form:rgba(217, 161, 243, 0.979);
+    --color-box-right:rgb(4, 49, 78);
+    --blue-link-a: rgb(164, 164, 255);
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--blue-color-dashboard);
+    border-radius: 5px;
+    border: 2px solid rgb(91, 203, 248);
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(14, 143, 194);
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+::-webkit-input-placeholder {
+    font-size: 1rem;
+    margin-left: 5rem;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    color: var(--white-word-color);
+    background-color: var(--background-header);
+    border-radius: 2px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titlelogo{
+    margin-top: 2rem;
+}
+
+.titlelogo a{
+    color: var(--white-word-color);
+}
+
+.titlelogo a:hover{
+    color: red;
+}
+
+.logoheader{
+    display: flex;
+    margin-left: 15rem;
+}
+
+.textheader{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    margin-left: 2rem;
+}
+
+.textheader a{
+    color: var(--white-word-color);
+}
+
+.textheader a:hover{
+    border-radius: 2rem;
+    color: red;
+}
+
+.iconhead{
+    display: flex;
+    font-size: 4rem;
+    margin-right: 12rem;
+    position: relative;
+    justify-content: space-around;
+    width: 10rem;
+}
+
+.iconhead .sino:hover{
+    color: rgb(197, 159, 235);
+}
+
+.iconhead .ping:hover{
+    color: rgba(217, 161, 243, 0.979);
+}
+
+.sino h3{
+    position: absolute;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: rgb(230, 57, 57);
+    left: 3rem;
+    bottom: 1.5rem;
+    width: 1rem;
+}
+
+.ping{
+    color: rgb(30, 241, 30);
+}
+.ping h3{
+    position: absolute;
+    align-items: center;
+    border-radius: 1rem;
+    color: var(--white-word-color);
+    left: 8rem;
+    bottom: 1.5rem;
+    width: 1rem;
+}
+
+
+/*--------------------------------Container------------------------------------*/
+
+.container{
+    display: flex;
+}
+
+.boxleft{
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    font-size: 7rem;
+    bottom: 45%;
+    width: 100%;
+    color: var(--white-word-color);
+    opacity: 0.6;
+}
+
+.icon i#direito{
+    position: absolute;
+    left: 95%;
+    bottom: 35%;
+}
+
+.icon  i#direito:hover {
+    color: white;
+    opacity: 1;
+}
+
+.icon  i#esquerdo:hover {
+    color: white;
+    opacity: 1;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 90vh;
+    position: relative;
+}
+
+.image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    object-fit: cover;
+}
+
+.image img.selected{
+    opacity: 1;
+    transition: 2s;
+}
+
+.boxright{
+    background-color: var(--color-box-right);
+    width: 40%;
+    height: 90vh;
+    color: var(--white-word-color);    
+}
+
+.boxright form{
+    width: 50%;
+    height: 40rem;
+    border-radius: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.87;
+    outline: none;
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-top: 20%;
+}
+
+.boxright form input{
+    border-radius: 1rem;
+    width: 20rem;
+    height: 2rem;
+}
+
+.boxright .email{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1rem;
+}
+
+.boxright .email input{
+    margin-top: 1rem;
+    margin-left: 1.8rem;
+}
+
+.email input[type=email]{
+    font-size: 1.2rem;
+    background-color: var(--color-box-right);
+    color: var(--white-word-color);
+    border-radius: 0.5rem;
+    border: groove rgb(229, 229, 248);
+}
+
+.email input[type=email]:hover{
+    border: groove rgb(15, 245, 253);
+}
+
+.email input[type=email]:focus{
+    border: groove rgb(97, 147, 255);
+    outline: 0;
+}
+
+.boxright .password{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: flex-start;
+    margin-left: 1rem;
+}
+
+.boxright .password input{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.password input[type=password]{
+    font-size: 1.2rem;
+    background-color: var(--color-box-right);
+    color: var(--white-word-color);
+    border-radius: 0.5rem;
+    border: groove rgb(229, 229, 248);
+}
+
+.password input[type=password]:hover{
+    border: groove rgb(15, 245, 253);
+}
+
+.password input[type=password]:focus{
+    border: groove rgb(97, 147, 255);
+    outline: 0;
+}
+
+.checkbox{
+    display: flex;
+    position: relative;
+    left: 0.5rem;
+    width: 80%;
+}
+/*Para manipular um input, tem que declarar o type dele com um sinal de igual entre colchetes*/
+.checkbox input[type=checkbox] {
+    margin: 0;
+    padding: 0;
+    height: 1.3rem;
+    transition: 4s;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+}
+
+.checkbox a {
+    font-size: 1rem;
+    position: relative;
+    color: var(--blue-link-a);
+    text-decoration: none;  
+}
+
+.checkbox a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--blue-link-a);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+.checkbox a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+.buttomregister input[type=button]{
+    background: #0066A2;
+    color: white;
+    border-color: #0066A2;
+    height: 50px;
+    width: 70%;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5.5rem;
+    margin-top: 2%;
+}
+    
+.register #or{
+    display: flex;
+    margin-left: 50%;
+}    
+
+.register #1{
+    border: solid black;
+}
+
+.imgregister{
+    display: flex;
+    margin: 0;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}   
+
+.imgregister a{
+    text-decoration: none;
+}   
+
+.imgregister img{
+    border-radius: 50%;
+    margin: 0;
+}   
+.imgregister .epic{
+    border-radius: 90%;
+}   
+.imgregister img:hover{
+    background-color: var(--white-word-color);
+}   
+
+.google img{
+    border-radius: 20%;
+    height: 50px;
+    width: 70%;
+    margin-left: 5.5rem;
+}
