@@ -56,11 +56,11 @@ a{
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: var(--header-color);
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100vw;
     height: 8rem;
 }
 
@@ -89,9 +89,9 @@ header{
 
 .ask{
     display: flex;
-    height: 5vh;
+    height: 3.5rem;
     width: 30rem;
-    margin-top: 4.5vh;
+    margin-top: 2.4rem;
     background: rgb(241, 241, 241);
     border-radius: 1rem;
 }
@@ -161,18 +161,26 @@ header{
     margin: 0%;
 }
 
+/*__________________________________Configuração da Navbar____________________________________________*/
+
 nav{
-    background-color: var(--background-container);
-    width: 25vw;
-    height: 50rem;
+    width: 30%; 
+    height: 100vh;
+}
+
+main{
+    width: 60%;
+    margin-left: 40%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
 }
 
 .perfilnav{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3rem;
-    margin-left: -6rem;
+    margin-left: -5rem;
 }
 
 .perfilnav img{
@@ -200,6 +208,7 @@ nav{
 
 nav ul{
     height: 50vh;
+    margin-left: 1rem;
 }
 
 nav li{
@@ -221,14 +230,19 @@ nav a:hover{
     color: white;
 }
 
+/*_______________________________Configuração perfil______________________________*/
+
 .perfilcamila{
-    position: relative;
     flex-direction: column;
-    width: 45%;
+    width: 35%;
     height: 105rem;
     border: solid var(--border);
     border-top: none;
     border-width: 0.5px;
+}
+
+.capa img {
+    width: 100%;
 }
 
 .headercamila{
@@ -246,23 +260,28 @@ nav a:hover{
     border-radius: 50%;
     position: absolute;
     top: -9rem;
-    right: 35rem;
 }
 
 .txtheader{
     height: 10rem;
-    flex-direction: column;
     display: block;
     margin-top: 5rem;
+    margin-left: 1rem;
 }
 
 .txtheader #nomeperfil{
     display: flex;
-    width: 7.6rem;
+    width: 14rem;
     height: 2rem;
     color: var(--word-color-white);
     align-items: center;
     justify-content: space-between;
+}
+
+.txtheader #nomeperfil img{
+    display: block;
+    margin-top: 41rem;
+    margin-left: 7.4rem;
 }
 
 .txtheader #arrobacamila{
@@ -300,12 +319,6 @@ nav a:hover{
 .txtheader #recado h2{
     font-size: 1.4rem;
     font-family: 'Times New Roman', Times, serif;
-}
-
-.txtheader img{
-    position: absolute;
-    top: 23.9rem;
-    right: 46.5rem;
 }
 
 .headerbaixo{
